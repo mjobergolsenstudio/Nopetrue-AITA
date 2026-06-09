@@ -1,0 +1,35 @@
+{
+  "channel": "NopeTrue",
+  "brand": {
+    "primary_color": "#00205B",
+    "accent_color": "#EF2B2D",
+    "font": "Anton",
+    "watermark": "@NopeTrue"
+  },
+  "focus_teams": ["Norway", "Norge"],
+  "api_football": {
+    "base_url": "https://v3.football.api-sports.io",
+    "wc_league_id": 1,
+    "season": 2026
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "voice_id": "nb-NO-FinnNeural",
+    "rate": "+8%"
+  },
+  "output": {
+    "shorts": { "w": 1080, "h": 1920, "fps": 30, "max_seconds": 58 },
+    "long":   { "w": 1920, "h": 1080, "fps": 30, "target_minutes": 8 }
+  },
+  "triggers": {
+    "pre_match_hours_before": 18,
+    "post_match_minutes_after": 90,
+    "daily_digest_cron": "0 6 * * *"
+  },
+  "visuals": {
+    "ai_clips_dir": "assets/ai",
+    "stock_dir": "assets/stock",
+    "graphics_dir": "assets/graphics",
+    "music_dir": "assets/music"
+  }
+}
