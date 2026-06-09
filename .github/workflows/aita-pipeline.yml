@@ -27,7 +27,7 @@ jobs:
       - name: Installer FFmpeg og fonter
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y ffmpeg fonts-dejavu -qq
+          sudo apt-get install -y --fix-missing ffmpeg fonts-dejavu-core
 
       - name: Lag YouTube token
         run: echo "${{ secrets.YOUTUBE_TOKEN_PICKLE }}" | base64 -d > token.pickle
