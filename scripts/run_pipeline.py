@@ -1,5 +1,11 @@
-import sys, os, json, random
-sys.path.insert(0, os.path.dirname(__file__))
+import sys
+import os
+
+# Legg til scripts-mappen i path
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+import json
+import random
 
 from fetch_story import pick_random_story
 from summarize import summarize_story
